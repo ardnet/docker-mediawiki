@@ -10,6 +10,7 @@ RUN set -x; \
         g++ \
         libicu52 \
         libicu-dev \
+        vim \
     && pecl install intl \
     && echo extension=intl.so >> /usr/local/etc/php/conf.d/ext-intl.ini \
     && apt-get purge -y --auto-remove g++ libicu-dev \
